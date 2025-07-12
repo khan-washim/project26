@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Bootstrap Icons (only once) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<!-- Your Custom CSS -->
+<link rel="stylesheet" href="home.css">
+
+ 
+</head>
+<body>
+ <!-- Top Bar -->
+<div class="container-fluid d-flex justify-content-center" style="background-color: #F2653A;">
+  <div class="row align-items-center text-white" style="width: 1350px; height: 52px; border-radius: 0;">
+    <div class="col-md-6 d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2">
+      <div><i class="fas fa-phone-alt me-2"></i>+8801234567890</div>
+      <div><i class="fab fa-google ms-md-4 me-2"></i>example@gmail.com</div>
+    </div>
+    <div class="col-md-6 d-flex justify-content-md-end justify-content-start mt-2 mt-md-0 gap-3">
+      <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+  <!-- Navbar -->
+ 
+<!-- Wrapper div for centering -->
+<div class="bg-white">
+  <nav class="navbar navbar-expand-lg shadow-sm border-bottom" style="background-color: #FFFFFF; border-radius: 0;">
+    <div class="container-fluid px-4">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="Logo">
+      </a>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible navbar content -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu text-start">
+              <li><a class="dropdown-item" href="service1.html">Service 1</a></li>
+              <li><a class="dropdown-item" href="srevice2.html">Service 2</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu text-start">
+              <li><a class="dropdown-item" href="product1.html">Product 1</a></li>
+              <li><a class="dropdown-item" href="product2.html">Product 2</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="book now.html">Book Now</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact us.html">Contact Us</a></li>
+        </ul>
+
+        <!-- Right-side icons & buttons -->
+        <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0 justify-content-center">
+          <a href="#" class="text-dark fs-5"><i class="bi bi-cart2"></i></a>
+          <a href="registration.html" class="btn btn-outline-dark btn-sm">Registration</a>
+          <a href="login.html" class="btn btn-outline-dark btn-sm">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+   <!-- Hero Carousel -->
+
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/Frame 862 (3).png" class="d-block w-100" alt="Hero Image" />
+      <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+        <h6 class="text-white">No. 1 Pest Control Service</h6>
+        <h1 class="fw-bold" style="color: #F2E83A; font-family: 'Lato', sans-serif; font-size: 40px;">
+          KEEP YOUR FAMILY<br>SAFE<br>FROM INSECTS
+        </h1>
+        <p class="text-white" style="font-size: 18px;">
+          Our business pest control service can support you keep a fresh <br> atmosphere for your employees and customers.
+        </p>
+      </div>
+    </div>
+   
+  </div>
+
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+ 
+
+<div class="py-5 green-bg d-flex justify-content-center">
+  <div class="container-fluid" style="max-width: 1200px;">
+    <div class="row g-4 justify-content-center">
+      <!-- First Card -->
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="card shadow-sm border-0 custom-card w-100">
+          <div class="card-body d-flex flex-column flex-md-row align-items-center justify-content-between h-100">
+            <!-- Text Left -->
+            <div class="text-start text-md-start">
+              <h5 class="mb-3" style="font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 600;">Our Service</h5>
+              <p style="font-family: 'Lato', sans-serif; font-size: 28px; font-weight: 700;" class="mb-3">
+                Special Cleaning<br>Services
+              </p>
+              <a href="#" style="font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 600; color: #F2653A; text-decoration: underline;">
+                View Details
+              </a>
+            </div>
+            <!-- Image Right -->
+            <div class="mt-4 mt-md-0 ms-md-3">
+              <img src="./images/d0 1 (2).png" alt="Our Service Image" class="img-fluid custom-img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Card -->
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="card shadow-sm border-0 custom-card w-100">
+          <div class="card-body d-flex flex-column flex-md-row align-items-center justify-content-between h-100">
+            <!-- Text Left -->
+            <div class="text-start text-md-start">
+              <h5 class="mb-3" style="font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 600;">Our Product</h5>
+              <p style="font-family: 'Lato', sans-serif; font-size: 28px; font-weight: 700;" class="mb-3">
+                Special Cleaning<br>Services
+              </p>
+              <a href="#" style="font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 600; color: #F2653A; text-decoration: underline;">
+                View Details
+              </a>
+            </div>
+            <!-- Image Right -->
+            <div class="mt-4 mt-md-0 ms-md-3">
+              <img src="./images/d0 1 (3).png" alt="Our Product Image" class="img-fluid custom-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- What We Do -->
+  <div class="py-5 pt-4 text-center green-bg">
+    <div class="container-fluid">
+      <img src="./images/anti-cockroach-pest-control-stop-insects-sign-vector-41398510 1.png" alt="Anti Cockroach Pest Control Sign" class="img-fluid pb-5" />
+      <h3>WHAT WE DO?</h3>
+      <p class="pb-4">
+        Expert pest control services ensuring a safe, pest-free environment with eco-friendly solutions,<br>
+        professional inspections, and reliable treatments.
+      </p>
+      <!-- Style Block -->
+
+
+<!-- Image Grid -->
+<div class="row g-4">
+  <div class="col-md-3 col-6">
+    <img src="./images/Rectangle 1 (5).png" class="img-fluid uniform-img" alt="">
+  </div>
+  <div class="col-md-3 col-6">
+    <img src="./images/Frame 872.png" class="img-fluid uniform-img" alt="">
+  </div>
+  <div class="col-md-3 col-6 position-relative">
+    <img src="./images/Frame 874.png" class="img-fluid uniform-img " alt="Hospital Cleaning">
+    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center overlay-box">
+      <div>
+        <h4 style="font-weight: 200; font-size: 16px;">Hospital Cleaning Services</h4>
+        <p style="font-weight: 100; font-size: 14px; line-height: 1.4;">Sterile, hygienic, safe environment with trained professionals and eco solutions.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-6">
+    <img src="./images/Rectangle 4 (5).png" class="img-fluid uniform-img" alt="">
+  </div>
+</div>
+
+    </div>
+  </div>
+
+ 
+
+
+<div class="container-fluid mt-5 mx-0 px-0">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active position-relative">
+        <img src="./images/Rectangle 5 (3).png" class="img-fluid w-100" alt="Offer Banner" />
+
+        <!-- Custom caption layout -->
+        <div class="carousel-caption d-flex h-100 align-items-center text-start text-white px-2 px-md-5" style="top: 0; bottom: 0; left: 0;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 d-flex flex-column justify-content-between" style="height: 100%;">
+                
+                <!-- Text block - centered vertically in available space -->
+                <div class="d-flex flex-column justify-content-center flex-grow-1">
+                  <h5 class="fw-semibold responsive-subtitle" style="font-family: 'Lato', sans-serif; color: #000000; margin-bottom: 20px;">
+                    50% Offer For All Pest Products
+                  </h5>
+
+                  <h1 class="fw-bold responsive-title" style="font-family: 'Lato', sans-serif; color: #F2653A; margin-bottom: 20px;">
+                    Safe Ways to Control
+                  </h1>
+
+                  <h6 class="fw-normal responsive-text" style="font-family: 'Lato', sans-serif; color: #000000; margin-bottom: 20px;">
+                    Perfect Pest Control System!
+                  </h6>
+                </div>
+
+                <!-- Button - pushed to bottom -->
+                <div>
+                  <button class="btn mt-5 responsive-button" style="background-color: #9D6A5A; color: #000000; font-family: 'Lato', sans-serif;">
+                    Shop Now
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> 
+    </div> 
+  </div> 
+</div>
+
+
+
+<div class="container-fluid text-center" style="padding: 40px 0;">
+  <img 
+    src="./images/anti-cockroach-pest-control-stop-insects-sign-vector-41398510 1.png" 
+    alt="Anti Cockroach Pest Control Sign" 
+    class="img-fluid mx-auto d-block"
+  />
+</div>
+
+ 
+  <div class=" green-bg text-center">
+    <div class="container-fluid">
+    
+
+<h4 class="mb-1" style="font-family: 'Lato', sans-serif; font-size: 32px; font-weight: 300; color: #363636;">
+  OUR BUG HUNTING PRODUCTS
+</h4>
+
+<p class="mb-5" style="font-family: 'Roboto', sans-serif; font-size: 20px; font-weight: 100; color: #363636;">
+  Expert pest control services ensuring a safe, pest-free environment with eco-friendly<br> solutions, professional inspections, and reliable treatments.
+</p>
+
+      <div class="row g-3">
+      
+<div class="container-fluid py-3">
+  <div class="row text-center justify-content-center">
+    <div class="col-auto">
+  <span class="category-item" style="font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300;">All</span>
+</div>
+<div class="col-auto">
+  <span class="category-item" style="font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300;">Cockroach</span>
+</div>
+<div class="col-auto">
+  <span class="category-item" style="font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300;">Pest Chemicals</span>
+</div>
+<div class="col-auto">
+  <span class="category-item" style="font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300;">Pest Machinery</span>
+</div>
+  </div>
+</div>
+
+
+<!-- Product Grid -->
+<div class="container-fluid py-5">
+    <div class="row justify-content-center gx-0">
+
+      <!-- Loop for 8 products -->
+      <!-- Product 1 -->
+      <div class="col-md-3 col-6 mb-4 d-flex justify-content-center product-wrapper">
+        <div class="card text-center product-card">
+          <img src="./images/Rectangle 6 (1).png" class="product-img" alt="Product Image 1">
+          <div class="card-body product-body">
+            <h5 class="product-title">TK. 1500</h5>
+            <p class="product-desc">Power Bacsol Cockroach<br> Killing Gel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-3 col-6 mb-4 d-flex justify-content-center product-wrapper">
+        <div class="card text-center product-card">
+          <img src="./images/Rectangle 6 (2).png" class="product-img" alt="Product Image 2">
+          <div class="card-body product-body">
+            <h5 class="product-title">TK. 1500</h5>
+            <p class="product-desc">Power Bacsol Cockroach<br> Killing Gel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-3 col-6 mb-4 d-flex justify-content-center product-wrapper">
+        <div class="card text-center product-card">
+          <img src="./images/Rectangle 6 (3).png" class="product-img" alt="Product Image 3">
+          <div class="card-body product-body">
+            <h5 class="product-title">TK. 1500</h5>
+            <p class="product-desc">Power Bacsol Cockroach<br> Killing Gel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-3 col-6 mb-4 d-flex justify-content-center product-wrapper">
+        <div class="card text-center product-card">
+          <img src="./images/Rectangle 6 (4).png" class="product-img" alt="Product Image 4">
+          <div class="card-body product-body">
+            <h5 class="product-title">TK. 1500</h5>
+            <p class="product-desc">Power Bacsol Cockroach<br> Killing Gel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-3 col-6 d-flex justify-content-center product-wrapper">
+        <div class="card text-center product-card">
+          <img src="./images/Rectangle 6 (1).png" class="product-img" alt="Product Image 5">
+          <div class="card-body product-body">
+            <h5 class="product-title">TK. 1500</h5>
+            <p class="product-desc">Power Bacsol Cockroach<br> Killing Gel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-md-3 col-6 d-flex justify-content-center product-wrapper">
+        <div class="card text-center product-card">
+          <img src="./images/Rectangle 6 (2).png" class="product-img" alt="Product Image 6">
+          <div class="card-body product-body">
+            <h5 class="product-title">TK. 1500</h5>
+            <p class="product-desc">Power Bacsol Cockroach<br> Killing Gel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-md-3 col-6 d-flex justify-content-center product-wrapper">
+        <div class="card text-center product-card">
+          <img src="./images/Rectangle 6 (3).png" class="product-img" alt="Product Image 7">
+          <div class="card-body product-body">
+            <h5 class="product-title">TK. 1500</h5>
+            <p class="product-desc">Power Bacsol Cockroach<br> Killing Gel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-md-3 col-6 d-flex justify-content-center product-wrapper">
+        <div class="card text-center product-card">
+          <img src="./images/Rectangle 6 (4).png" class="product-img" alt="Product Image 8">
+          <div class="card-body product-body">
+            <h5 class="product-title">TK. 1500</h5>
+            <p class="product-desc">Power Bacsol Cockroach<br> Killing Gel</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Projects Section -->
+  
+  <!-- Latest Projects Section -->
+<div class="container-fluid py-5" style="background-color: #363636; overflow-x: hidden;">
+  <!-- Top Icon -->
+  <div class="text-center">
+    <img 
+      src="./images/Vector.png" 
+      alt="Anti Cockroach Pest Control Sign"
+      class="img-fluid d-block mx-auto mt-2 pt-4 pb-5"
+    />
+  </div>
+
+  <!-- Title & Description -->
+  <div class="text-center">
+    <h4 
+      class="mb-4"
+      style="color: #F2E83A; font-family: 'Lato', sans-serif; font-size: 32px; font-weight: bold;">
+      Latest Projects
+    </h4>
+    <p 
+      class="mb-5 px-3"
+      style="color: #FFFFFF; font-family: 'Roboto', sans-serif; font-size: 20px; font-weight: 400;">
+      Explore our latest projects showcasing top-quality pest control solutions, successful<br>
+      treatments, and satisfied clients with exceptional service results.
+    </p>
+  </div>
+
+  <!-- Project Images Grid -->
+  <div class="container pb-5">
+    <div class="row g-4">
+      <div class="col-md-4 col-12">
+        <img src="./images/Rectangle 1 (5).png" class="img-fluid img-thumbnail" alt="Project 1">
+      </div>
+      <div class="col-md-4 col-12">
+        <img src="./images/Frame 872.png" class="img-fluid img-thumbnail" alt="Project 2">
+      </div>
+      <div class="col-md-4 col-12">
+        <img src="./images/Frame 874.png" class="img-fluid img-thumbnail" alt="Project 3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid px-0 mx-0">
+<div style="background-color: #BDE6B0; padding: 60px 0;">
+  <div style="background-color: #F2E6D4; padding: 30px 0;" class="text-center">
+    <img src="./images/akij-venture-logo-16A40BF84C-seeklogo.com 1 (1).png" height="40" alt="Logo 1">
+    <img src="./images/cleaning.png" height="40" alt="Logo 2">
+    <img src="./images/logo_left 1 (1).png" height="40" alt="Logo 3">
+    <img src="./images/b10d85-efad-3740-343e-3a8a3c6a70_3565dc6-060a-eee-580d-1e5626fa111_7FuK4ub7TaWEWPPQmmHm_Salt_Roe2020Logo_BLACK_nobg 1 (1).png" height="40" alt="Logo 4">
+    <img src="./images/logo 1 (3).png" height="40" alt="Logo 5">
+    <img src="./images/360_F_412103381_O6nWrELMkGIskDi8B3lCa8qrJWpUMWhb 1 (2).png" height="40" alt="Logo 6">
+  </div>
+</div>
+</div>
+
+
+
+   <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-row">
+      
+      <!-- About Us -->
+      <div class="footer-col footer-about">
+        <h5>About Us</h5>
+        <p class="text-justify">
+          Pest Control Services BD is the right choice. Keep your home, office, or workplace free from all pests. Maintain a healthy life. The pest control services bd is waiting for your call. 24/7 pest control services provider in Dhaka.
+        </p>
+        <img src="./images/pcsbd-logo 2.png" alt="PCS Logo" class="pe-3" >
+      </div>
+
+      <!-- Office Hours -->
+      <div class="footer-col">
+        <h5>Office Hours</h5>
+        <p>Sat - 10:00 to 22:00</p>
+        <p>Sun - 10:00 to 22:00</p>
+        <p>Mon - 10:00 to 22:00</p>
+        <p>Tue - 10:00 to 22:00</p>
+        <p>Wed - 10:00 to 22:00</p>
+        <p>Thur - 10:00 to 22:00</p>
+        <p>Fri - 10:00 to 22:00</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <p><a href="#">- Home</a></p>
+        <p><a href="#">- Services</a></p>
+        <p><a href="#">- Products</a></p>
+        <p><a href="#">- Gallery</a></p>
+        <p><a href="#">- Contact Us</a></p>
+        <p><a href="#">- Login</a></p>
+        <p><a href="#">- Registration</a></p>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <p><i class="bi bi-geo-alt-fill me-2"></i>75/3-6, Green Road, Farmgate, Dhaka-1215</p>
+        <p><i class="bi bi-envelope-fill me-2"></i>info@pestcontrol.com</p>
+        <p><i class="bi bi-telephone-fill me-2"></i>+880 1234 678 890</p>
+
+        <h5 class="mt-4">Subscribe Our Newsletter</h5>
+        <div class="position-relative mt-3" style="max-width: 400px;">
+  <button type="button" class="newsletter-btn">
+    <i class="bi bi-arrow-right-circle"></i>
+  </button>
+  <input
+    type="email"
+    class="form-control newsletter-input"
+    placeholder="Write your mail for offers"
+  >
+</div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>

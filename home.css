@@ -1,0 +1,386 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #BDE6B0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #f2653a;
+  color: white;
+  font-size: 14px;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: #ffffff !important;
+  width: 1350px;
+  max-width: 100%;
+  margin: auto;
+  z-index: 999;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.nav-link {
+  color: #363636 !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
+  color: #F2653A !important;
+}
+
+.btn-outline-dark:hover {
+  background-color: #F2653A !important;
+  color: white;
+}
+
+.navbar-brand img {
+  height: 79px;
+  width: 150px;
+}
+
+/* Carousel Responsive */
+@media (max-width: 768px) {
+  .carousel-caption {
+    bottom: 10% !important;
+    text-align: left;
+  }
+
+  .carousel-caption h1 {
+    font-size: 28px !important;
+    line-height: 1.3;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .carousel-caption h5 {
+    font-size: 16px !important;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .carousel-caption p {
+    font-size: 14px !important;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .carousel-caption button {
+    font-size: 16px !important;
+    padding: 8px 16px;
+  }
+}
+
+/* Custom Card */
+.custom-card {
+  max-width: 576px;
+  height: 300px;
+}
+
+.custom-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+  .custom-card {
+    height: auto;
+  }
+
+  .custom-img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  .card-body {
+    flex-direction: column !important;
+    text-align: center;
+  }
+}
+
+/* Product Card */
+.product-card {
+  background-color: #BDE6B0;
+  border: none;
+  width: 278px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.product-img {
+  width: 278px;
+  height: 278px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-body {
+  background-color: #BDE6B0;
+  color: #363636;
+  padding: 10px 0;
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.product-desc {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.product-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .product-card {
+    width: 100%;
+  }
+
+  .product-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Uniform Image */
+.uniform-img {
+  width: 285px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Overlay Box */
+.overlay-box {
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Fixed Image */
+.fixed-img {
+  width: 278px;
+  height: 278px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #212121;
+  color: #ffffff;
+  padding: 64px;
+  width: 1350px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.footer h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer p,
+.footer a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.footer a:hover {
+  color: #f1653d;
+}
+
+.newsletter-input {
+  background-color: #212121;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 10px 10px 50px;
+  width: 100%;
+  border-radius: 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+.newsletter-input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.newsletter-btn {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.newsletter-btn i {
+  color: #212121;
+  font-size: 18px;
+}
+
+.footer img {
+  width: 290px;
+  height: 168px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 72px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-about p {
+  margin-bottom: 16px;
+}
+
+.footer-about img {
+  margin-top: auto;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 48px 24px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer h5 {
+    font-size: 20px;
+  }
+
+  .footer p,
+  .footer a {
+    font-size: 18px;
+  }
+
+  .footer img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-about img {
+    margin-top: 24px;
+  }
+}
+
+/* Category Item */
+.category-item {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: color 0.3s;
+}
+
+.category-item:hover,
+.category-item.active {
+  color: #F2653A;
+}
+/* Product Card Style */
+ .product-card {
+      background-color: #BDE6B0;
+      border: none;
+      width: 278px;
+    }
+
+    .product-img {
+      width: 278px;
+      height: 278px;
+      object-fit: cover;
+    }
+
+    .product-body {
+      background-color: #BDE6B0;
+      color: #363636;
+      padding: 10px 0;
+    }
+
+    .product-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .product-desc {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .product-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (max-width: 576px) {
+      .product-card {
+        width: 100%;
+      }
+
+      .product-img {
+        width: 100%;
+        height: auto;
+      }
+    }
