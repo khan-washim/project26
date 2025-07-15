@@ -1,8 +1,12 @@
-/* Google Fonts */
+/*-----------------------------------
+  Google Fonts
+-----------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-/* Base Styles */
+/*-----------------------------------
+  Base Styles
+-----------------------------------*/
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #BDE6B0;
@@ -11,14 +15,18 @@ body {
   overflow-x: hidden;
 }
 
-/* Top Bar */
+/*-----------------------------------
+  Top Bar
+-----------------------------------*/
 .top-bar {
   background-color: #f2653a;
   color: white;
   font-size: 14px;
 }
 
-/* Navbar */
+/*-----------------------------------
+  Navbar
+-----------------------------------*/
 .custom-navbar {
   background-color: #ffffff !important;
   width: 1350px;
@@ -53,7 +61,9 @@ body {
   width: 150px;
 }
 
-/* Carousel Responsive */
+/*-----------------------------------
+  Carousel (Responsive)
+-----------------------------------*/
 @media (max-width: 768px) {
   .carousel-caption {
     bottom: 10% !important;
@@ -82,7 +92,9 @@ body {
   }
 }
 
-/* Custom Card */
+/*-----------------------------------
+  Custom Card
+-----------------------------------*/
 .custom-card {
   max-width: 576px;
   height: 300px;
@@ -111,13 +123,16 @@ body {
   }
 }
 
-/* Product Card */
+/*-----------------------------------
+  Product Card
+-----------------------------------*/
 .product-card {
-  background-color: #BDE6B0;
+  background-color:#BDE6B0 ;
   border: none;
   width: 278px;
   margin: 0 auto;
   text-align: center;
+  color: #000;
 }
 
 .product-img {
@@ -151,7 +166,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 @media (max-width: 576px) {
@@ -165,7 +179,9 @@ body {
   }
 }
 
-/* Uniform Image */
+/*-----------------------------------
+  Uniform Image (Fixed Size)
+-----------------------------------*/
 .uniform-img {
   width: 285px;
   height: 350px;
@@ -175,15 +191,9 @@ body {
   margin: 0 auto;
 }
 
-/* Overlay Box */
-.overlay-box {
-  border-radius: 2px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-family: 'Lato', sans-serif;
-}
-
-/* Fixed Image */
+/*-----------------------------------
+  Fixed Image (For static cards)
+-----------------------------------*/
 .fixed-img {
   width: 278px;
   height: 278px;
@@ -191,7 +201,53 @@ body {
   margin: 0 auto;
 }
 
-/* Footer */
+/*-----------------------------------
+  Image Box with Overlay
+-----------------------------------*/
+.img-box {
+  width: 285px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+.overlay-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Wrap images on small screens */
+@media (max-width: 768px) {
+  .image-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*-----------------------------------
+  Footer
+-----------------------------------*/
 .footer {
   background-color: #212121;
   color: #ffffff;
@@ -240,18 +296,19 @@ body {
 
 .newsletter-btn {
   position: absolute;
-  left: 10px;
+  left: 1px;
   top: 50%;
   transform: translateY(-50%);
   background-color: #fff;
   border: none;
   border-radius: 50%;
-  padding: 6px;
+  padding: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
   cursor: pointer;
+  width: 50px;
 }
 
 .newsletter-btn i {
@@ -266,10 +323,11 @@ body {
 
 .footer-row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap; /* ✅ Makes columns wrap on small screens */
   justify-content: space-between;
   gap: 72px;
 }
+
 
 .footer-col {
   flex: 1;
@@ -316,7 +374,9 @@ body {
   }
 }
 
-/* Category Item */
+/*-----------------------------------
+  Category Item
+-----------------------------------*/
 .category-item {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
@@ -331,56 +391,51 @@ body {
 .category-item.active {
   color: #F2653A;
 }
-/* Product Card Style */
- .product-card {
-      background-color: #BDE6B0;
-      border: none;
-      width: 278px;
-    }
 
-    .product-img {
-      width: 278px;
-      height: 278px;
-      object-fit: cover;
-    }
+/*-----------------------------------
+  Responsive Text Utilities
+-----------------------------------*/
+.responsive-title {
+  font-size: 48px;
+}
 
-    .product-body {
-      background-color: #BDE6B0;
-      color: #363636;
-      padding: 10px 0;
-    }
+.responsive-subtitle {
+  font-size: 24px;
+}
 
-    .product-title {
-      font-weight: bold;
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
+.responsive-text {
+  font-size: 20px;
+}
 
-    .product-desc {
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 1.4;
-      margin: 0;
-    }
+.responsive-button {
+  font-size: 18px;
+  padding: 10px 24px;
+}
 
-    .product-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+@media (max-width: 768px) {
+  .responsive-title {
+    font-size: 28px;
+  }
 
-    .container-fluid {
-      padding-left: 0;
-      padding-right: 0;
-    }
+  .responsive-subtitle {
+    font-size: 18px;
+  }
 
-    @media (max-width: 576px) {
-      .product-card {
-        width: 100%;
-      }
+  .responsive-text {
+    font-size: 16px;
+  }
 
-      .product-img {
-        width: 100%;
-        height: auto;
-      }
-    }
+  .responsive-button {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+
+  .carousel-caption {
+    text-align: left;
+    padding-bottom: 40px;
+  }
+
+  .pt-5.mt-lg-5 {
+    margin-top: 60px !important;
+  }
+}

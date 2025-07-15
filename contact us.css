@@ -2,6 +2,7 @@
       margin: 0;
       padding: 0;
       background-color: #BDE6B0;
+      overflow-x: hidden;
     }
 .top-bar {
   background-color: #f2653a;
@@ -92,18 +93,19 @@
 
 .newsletter-btn {
   position: absolute;
-  left: 10px;
+  left: 1px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #fff;       
+  background-color: #fff;
   border: none;
   border-radius: 50%;
-  padding: 6px;
+  padding: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
   cursor: pointer;
+  width: 50px;
 }
 
 .newsletter-btn i {
