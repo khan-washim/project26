@@ -1,6 +1,10 @@
 body {
       font-family: 'Roboto', sans-serif;
-    }
+    background-color: #BDE6B0;
+     overflow-x: hidden;
+   }
+
+    
     .top-bar {
       background-color: #f2653a;
       color: white;
